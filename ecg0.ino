@@ -8,10 +8,11 @@ hw_timer_t *Timer0_Cfg = NULL;
 
 volatile int counter = 0;
 volatile unsigned short adc = (analogRead(35)) >> 4;
-float scaled_adc = adc * (2 * PI / 1023.0);
-float sine_value = sin(scaled_adc);
-
  // adc/16 - 12bits to 8bits
+
+//float scaled_adc = adc * (2 * PI / 1023.0);
+//float sine_value = sin(scaled_adc);
+
 
 //Execution of interruptions at designated times
 void IRAM_ATTR Timer0_ISR() {
