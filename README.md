@@ -8,4 +8,4 @@ Also, this code has a memory and according to the ecg device, it stores and disp
 ![ecg1](https://github.com/Ebrahimi00/esp.serialplatter/assets/121750125/7f4fa7f5-29f4-4ebe-93a3-8c0e71dcb98a)
 
 To read the input analog value from the item pin, comment here we use pin 35.
-We create an adc variable and get its value using the analogRead(32) function.
+and create an adc variable and get its value using the analogRead(32) function.
