@@ -9,3 +9,6 @@ Also, this code has a memory and according to the ecg device, it stores and disp
 
 To read the input analog value from the item pin, comment here we use pin 35.
 and create an adc variable and get its value using the analogRead(35) function.
+
+esp32 has only 2 dacs and analog sine can only be displayed on 2 bases at the same time.
+The only way is to make pwm and with the Rc filter it will become sinusoidal. DAC can only be used for 2 bases.
