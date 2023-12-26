@@ -12,3 +12,5 @@ and create an adc variable and get its value using the analogRead(35) function.
 
 esp32 has only 2 dacs and analog sine can only be displayed on 2 bases at the same time.
 The only way is to make pwm and with the Rc filter it will become sinusoidal. DAC can only be used for 2 bases.
+
+In order to calculate the sinusoidal frequency that comes in 1 thousandth of a second, put the sinusoidal numbers in its timing on the dac base, the frequency of the sinusoidal pulse must be 1 kHz or the period of 1 millisecond.
