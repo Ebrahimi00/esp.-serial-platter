@@ -15,27 +15,27 @@ void setup() {
 //Start Bluetooth connection
 SerialBT.begin("Arduino Bluetooth"); // نام دستگاه بلوتوث
 
-  // تنظیم پین‌ها به عنوان خروجی
+  // Set pins as outputs
   pinMode(signal1Pin, OUTPUT);
   pinMode(signal2Pin, OUTPUT);
   pinMode(signal3Pin, OUTPUT);
 }
 
 void loop() {
-  // تولید سه سیگنال با الگوهای مختلف
-  // می‌توانید الگوها و مقادیر دلخواه خود را اضافه کنید
+  // Generating three signals with different patterns
+  // You can add your own patterns and values
   int signal1Value = map(millis(), 0, 2000, 0, 255);
   int signal2Value = map(millis(), 0, 3000, 0, 255);
   int signal3Value = map(millis(), 0, 4000, 0, 255);
 
-  // ارسال سیگنال‌ها به Serial Plotter
+  // Sending signals to Serial Plotter
   Serial.print(signal1Value);
   Serial.print('\t');
   Serial.print(signal2Value);
   Serial.print('\t');
   Serial.println(signal3Value);
 
-  // تنظیم مقادیر سیگنال‌ها بر روی پین‌ها
+  // Setting the values ​​of the signals on the pins
   analogWrite(signal1Pin, signal1Value);
   analogWrite(signal2Pin, signal2Value);
   analogWrite(signal3Pin, signal3Value);
