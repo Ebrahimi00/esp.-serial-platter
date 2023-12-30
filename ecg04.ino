@@ -40,6 +40,6 @@ void loop() {
   analogWrite(signal2Pin, signal2Value);
   analogWrite(signal3Pin, signal3Value);
 
-  // توقف برای مدت زمان کوتاه
+  // Stop for a short time
   delay(10);
 }
