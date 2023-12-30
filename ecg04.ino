@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <BluetoothSerial.h>
 
-// تعریف سه سیگنال
+// Definition of three signals
 const int signal1Pin = 2;
 const int signal2Pin = 3;
 const int signal3Pin = 4;
@@ -9,10 +9,10 @@ const int signal3Pin = 4;
 BluetoothSerial SerialBT; 
 
 void setup() {
-  // شروع ارتباط سریال با سرعت 9600 بیت بر ثانیه
+  // Start of serial communication with a speed of 9600 bits per second
   Serial.begin(9600);
 
-// شروع ارتباط بلوتوث
+//Start Bluetooth connection
 SerialBT.begin("Arduino Bluetooth"); // نام دستگاه بلوتوث
 
   // تنظیم پین‌ها به عنوان خروجی
